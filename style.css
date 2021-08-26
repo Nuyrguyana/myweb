@@ -1,0 +1,113 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: #121212;
+
+    background-color: #eee ;
+    background-image: url("img/2.jpg");
+
+    background-size: 100%;
+}
+
+p {
+    text-indent: 20px;
+}
+
+.title {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: -2px;
+}
+
+.justify {
+    text-align: justify;
+font-weight: 700;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+.table {
+    width: 100%;
+    border: 1px dashed #000;
+border-collapse: collapse;
+}
+
+.table th {
+    padding: 5px 10px;
+    text-align: left;
+    color: red;
+}
+
+.table td {
+    padding: 5px 10px;
+    border: 2px dashed #000;
+
+}
+
+.table tfoot td {
+    text-align: right;
+}
+
+.text-red {
+    display: inline-block;
+  width: 100px;
+    color: red;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+.page {
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* post */
+.post {
+    width: 700px;
+    height: 400px;
+    padding: 15px 25px;
+    margin: 0 auto 20px;
+
+    border: 1px solid #ddd;
+
+    background-size: cover;
+    background: url("img/1.jpg") no-repeat center;
+
+
+}
+
+
+
+.post-title {
+    margin: 0 0 20px 0;
+    color: yellow;
+}
+
+.post-text {
+    color: white;
+}
+
+.post-text p {
+    margin: 0 0 10px 0;
+
+}
+
+/* gradient */
+.gradient {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+
+
+ background-image: radial-gradient(circle, #fff, #333);
+}
