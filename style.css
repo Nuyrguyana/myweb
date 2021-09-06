@@ -5,8 +5,13 @@ body {
     color: #121212;
 
     background-color: #ffffff;
+}
 
-    background-size: 100%;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+
 }
 
 p {
@@ -21,7 +26,7 @@ p {
 
 .justify {
     text-align: justify;
-font-weight: 700;
+    font-weight: 700;
     font-style: italic;
 }
 
@@ -36,7 +41,7 @@ ol {
 .table {
     width: 100%;
     border: 1px dashed #000;
-border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 .table th {
@@ -57,7 +62,7 @@ border-collapse: collapse;
 
 .text-red {
     display: inline-block;
-  width: 100px;
+    width: 100px;
     color: red;
     font-weight: 700;
     font-style: italic;
@@ -86,7 +91,6 @@ border-collapse: collapse;
 }
 
 
-
 .post-title {
     margin: 0 0 20px 0;
     color: yellow;
@@ -108,7 +112,7 @@ border-collapse: collapse;
     margin: auto;
 
 
- background-image: radial-gradient(circle, #fff, #333);
+    background-image: radial-gradient(circle, #fff, #333);
 }
 
 /* Pseudo */
@@ -117,7 +121,7 @@ border-collapse: collapse;
     margin: 0;
     position: relative;
 
-    font-size:  30px;
+    font-size: 30px;
     text-align: center;
 
 }
@@ -136,15 +140,16 @@ border-collapse: collapse;
     bottom: -5px;
     left: 50%;
 }
-.pseudo-title:after {
-     content: "";
-     display: block;
-     margin: 25px auto;
-     width: 70px;
-     height: 3px;
 
-     background-color: #0021ff;
- }
+.pseudo-title:after {
+    content: "";
+    display: block;
+    margin: 25px auto;
+    width: 70px;
+    height: 3px;
+
+    background-color: #0021ff;
+}
 
 .pseudo-text p:first-letter {
     font-size: 25px;
@@ -152,4 +157,76 @@ border-collapse: collapse;
 
 .pseudo-text p:first-line {
     color: #ea0d36;
+}
+
+/* CSS3 */
+
+.element {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+
+    background-color: #e5e0e0;
+    border-radius: 20px;
+    box-shadow: -15px 15px 20px #a2a2a2 inset, -15px 15px 20px #838383;
+    opacity: 0.8;
+}
+
+.element-title {
+    margin: 0;
+    text-shadow: 10px 15px 2px #ffffff;
+}
+
+/* Page */
+
+.page {
+    width: 600px;
+    margin: 20px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: #eee;
+}
+
+.header-item {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.header-tel {
+    order: 2;
+}
+
+.header-logo {
+    order: 1;
+}
+
+.header-lang {
+    order: 3;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #333;
+    padding: 10px;
+}
+
+.main {
+    width: 70%;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #eee;
 }
